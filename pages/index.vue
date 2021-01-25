@@ -107,7 +107,7 @@ export default {
         {
           title: 'CodeTips',
           description: 'Gathers a list of JavaScript Fundamentals',
-          link: '',
+          link: 'https://code-tips.netlify.app/',
           source: 'https://github.com/o-louis/CodeTips',
         },
         {
