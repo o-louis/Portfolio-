@@ -1,5 +1,5 @@
 <template>
-	<div class="w-10/12 m-auto py-6 relative h-screen">
+	<div class="w-10/12 m-auto relative h-screen">
 		<Header />
 		<Introduction />
 		<About />
@@ -33,6 +33,10 @@ export default {
 
 * {
 	font-family: 'Heebo', sans-serif;
+}
+
+html {
+	scroll-behavior: smooth;
 }
 
 body {

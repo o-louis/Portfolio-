@@ -1,6 +1,6 @@
 <template>
 	<nav
-		class="w-10/12 h-10 flex justify-between items-center fixed top-0 py-6"
+		class="w-10/12 h-10 flex justify-between items-center fixed top-0 py-6 z-50"
 	>
 		<span class="w-3/12 mr-3" />
 		<ul class="flex flex-1 justify-between">
@@ -31,6 +31,10 @@ export default {
 </script>
 
 <style scoped>
+nav {
+	background: #101014;
+}
+
 span {
 	height: 1px;
 	background: rgba(255, 255, 255, 0.15);
