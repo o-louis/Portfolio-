@@ -2,11 +2,13 @@
   <div class="w-10/12 m-auto py-6 relative h-screen">
     <Header />
     <section class="text-white mt-12">
-      <p class="opacity-60">Hello, I'm</p>
-      <h1 class="text-3xl ml-4 font-bold">ORIANE LOUIS,</h1>
-      <h2 class="text-xl ml-12 font-medium opacity-60">Front-End Developer.</h2>
+      <p class="opacity-60 text-lg">Hello, I'm</p>
+      <h1 class="text-4xl ml-4 font-bold">ORIANE LOUIS,</h1>
+      <h2 class="text-2xl ml-12 font-medium opacity-60">
+        Front-End Developer.
+      </h2>
 
-      <p class="mt-12 font-light opacity-60">
+      <p class="mt-12 font-light opacity-60 text-lg">
         I’m a <span class="font-medium">passionate developer</span> based in
         Montreal. I’m enthusiast about new technologies and I
         <span class="font-medium">love building things</span> and
@@ -17,11 +19,11 @@
         <a v-for="(social, index) in socialNetwork" :key="index"
           ><img
             :src="social.icon"
-            :class="[socialNetwork.length - 1 != index ? 'pr-3' : '', 'h-9']"
+            :class="[socialNetwork.length - 1 != index ? 'pr-3' : '', 'h-10']"
         /></a>
       </div>
     </section>
-    <div class="absolute bottom-3 left-2/4">
+    <div class="absolute bottom-3 w-full">
       <img :src="chevronDown" class="m-auto" />
     </div>
   </div>
