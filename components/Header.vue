@@ -1,32 +1,44 @@
 <template>
-  <nav class="w-full flex justify-between items-center">
-    <span class="w-3/12 mr-3" />
-    <ul class="flex flex-1 justify-between">
-      <li
-        v-for="(section, index) in menu"
-        :key="index"
-        class="text-white uppercase font-normal"
-      >
-        {{ section.title }}
-      </li>
-    </ul>
-  </nav>
+	<nav
+		class="w-10/12 h-10 flex justify-between items-center fixed top-0 py-6"
+	>
+		<span class="w-3/12 mr-3" />
+		<ul class="flex flex-1 justify-between">
+			<li
+				v-for="(section, index) in menu"
+				:key="index"
+				class="text-white uppercase font-normal"
+			>
+				{{ section.title }}
+			</li>
+		</ul>
+	</nav>
 </template>
 
 <script>
 export default {
-  name: 'Header',
-  data() {
-    return {
-      menu: [{ title: 'Home' }, { title: 'About' }, { title: 'Projects' }],
-    }
-  },
+	name: 'Header',
+	data() {
+		return {
+			menu: [
+				{ title: 'Home' },
+				{ title: 'About' },
+				{ title: 'Projects' },
+			],
+		}
+	},
 }
 </script>
 
 <style scoped>
 span {
-  height: 1px;
-  background: rgba(255, 255, 255, 0.15);
+	height: 1px;
+	background: rgba(255, 255, 255, 0.15);
+}
+
+@media (max-width: 320px) {
+	span {
+		display: none;
+	}
 }
 </style>
