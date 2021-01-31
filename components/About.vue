@@ -1,7 +1,9 @@
 <template>
 	<section id="about" class="text-white min-h-screen h-auto pt-28">
-		<h2 class="uppercase text-xl mb-5">More about me</h2>
-		<p class="font-light text-lg opacity-60 leading-relaxed">
+		<h2 class="uppercase text-xl mb-5 sm:text-2xl">More about me</h2>
+		<p
+			class="font-light text-lg opacity-60 leading-relaxed sm:text-xl sm:leading-relaxed"
+		>
 			I am skilled in
 			<span class="font-medium"
 				>JavaScript, React.js, Vue.js and Node.js</span
@@ -17,7 +19,7 @@
 			<li
 				v-for="(skill, index) in skills"
 				:key="index"
-				class="text-white mr-3 mt-3"
+				class="text-white mr-3 mt-3 py-1 px-4 sm:text-xl"
 			>
 				{{ skill }}
 			</li>
@@ -57,6 +59,5 @@ export default {
 li {
 	background: rgb(37, 37, 48);
 	border-radius: 8px;
-	padding: 4px 10px;
 }
 </style>

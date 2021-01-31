@@ -1,5 +1,5 @@
 <template>
-	<div class="wrapper w-10/12 m-auto relative">
+	<div class="wrapper w-10/12 m-auto relative max-w-screen-md sm:w-8/12">
 		<Header />
 		<Introduction />
 		<About />

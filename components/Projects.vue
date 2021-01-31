@@ -1,6 +1,6 @@
 <template>
 	<section id="projects" class="text-white min-h-screen h-auto pt-28">
-		<h2 class="uppercase text-xl mb-6">My Projects</h2>
+		<h2 class="uppercase text-xl mb-6 sm:text-2xl">My Projects</h2>
 		<div>
 			<div
 				v-for="(project, index) in projects"
@@ -9,9 +9,9 @@
 			>
 				<img :src="project.img" />
 				<div
-					class="project-info absolute top-0 w-full h-full text-sm p-4 flex flex-col"
+					class="project-info absolute top-0 w-full h-full text-sm p-4 flex flex-col sm:text-lg"
 				>
-					<p class="text-lg">{{ project.title }}</p>
+					<p class="text-lg sm:text-xl">{{ project.title }}</p>
 					<p class="italic">{{ project.resume }}</p>
 					<div class="flex justify-between mt-8">
 						<button

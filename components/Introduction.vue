@@ -1,8 +1,11 @@
 <template>
-	<section id="home" class="text-white pt-28 min-h-screen h-auto text-lg">
-		<p class="opacity-60 text-xl">Hello, I'm</p>
-		<h1 class="text-3xl font-bold ml-4 my-1">ORIANE LOUIS,</h1>
-		<h2 class="text-2xl font-semibold opacity-60 ml-12">
+	<section
+		id="home"
+		class="text-white pt-28 min-h-screen h-auto text-lg sm:text-xl"
+	>
+		<p class="opacity-60 text-xl sm:text-2xl">Hello, I'm</p>
+		<h1 class="text-3xl font-bold ml-4 my-1 sm:text-4xl">ORIANE LOUIS,</h1>
+		<h2 class="text-2xl font-semibold opacity-60 ml-12 sm:text-3xl">
 			Front End Developer.
 		</h2>
 
@@ -23,7 +26,7 @@
 					:src="social.icon"
 					:class="[
 						socialNetwork.length - 1 != index ? 'pr-3' : '',
-						'h-10',
+						'h-10 sm:h-12',
 					]"
 			/></a>
 		</div>
