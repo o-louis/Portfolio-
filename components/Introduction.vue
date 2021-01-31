@@ -1,5 +1,5 @@
 <template>
-	<section class="text-white mt-20 h-screen">
+	<section class="text-white mt-20">
 		<p class="opacity-60 text-lg">Hello, I'm</p>
 		<h1 class="text-4xl font-bold sm:ml-4">ORIANE LOUIS,</h1>
 		<h2 class="text-2xl font-medium opacity-60 sm:ml-12">

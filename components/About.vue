@@ -1,5 +1,5 @@
 <template>
-	<section class="text-white mt-20 h-screen">
+	<section class="text-white">
 		<h2 class="uppercase text-xl mb-5">More about me</h2>
 		<p class="font-light text-lg opacity-60">
 			I am skilled in
@@ -10,13 +10,18 @@
 			development and I find myself capable enough to
 			<span class="font-medium">handle pressure well</span>. I'm a bit
 			perfectionist so I like projects well-organized.
+			<span class="font-medium">Quick learner</span> describes me well.
 		</p>
-		<p class="font-light text-lg opacity-60">
-			I would say,
-			<span class="font-medium">quick learner</span> describes me really
-			well. I keep learning everyday because web development is moving
-			fast and <span class="font-medium">I love that</span>.
-		</p>
+
+		<ul class="flex flex-wrap mt-8">
+			<li
+				v-for="(skill, index) in skills"
+				:key="index"
+				class="text-white mr-3 mt-3"
+			>
+				{{ skill }}
+			</li>
+		</ul>
 	</section>
 </template>
 
@@ -24,9 +29,34 @@
 export default {
 	name: 'About',
 	data() {
-		return {}
+		return {
+			skills: [
+				'Javascript',
+				'Typescript',
+				'Vue.js',
+				'React.js',
+				'Node.js',
+				'NextJS',
+				'HTML',
+				'CSS',
+				'SASS',
+				'Bootstrap',
+				'jQuery',
+				'TailwindCSS',
+				'Webpack',
+				'MongoDB',
+				'Python',
+				'Figma',
+			],
+		}
 	},
 }
 </script>
 
-<style scoped></style>
+<style scoped>
+li {
+	background: rgb(37, 37, 48);
+	border-radius: 8px;
+	padding: 4px 10px;
+}
+</style>
