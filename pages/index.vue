@@ -4,9 +4,9 @@
 		<Introduction />
 		<About />
 		<Projects />
-		<footer class="text-white text-center">
+		<footer class="text-white text-center mb-4">
 			<p>Made with ❤️ by Oriane Louis</p>
-			<p>© 2020, Built with NuxtJS</p>
+			<p>© 2021, Built with NuxtJS</p>
 		</footer>
 	</div>
 </template>
@@ -35,38 +35,6 @@ export default {
 			scrollPos: 0,
 			paused: false,
 		}
-	},
-	mounted() {
-		let _this = this
-		window.addEventListener(
-			'scroll',
-			function () {
-				const sections = document.querySelectorAll('section')
-				_this.sectionsTop = Array.from(sections).map(
-					(section) => section.offsetTop
-				)
-				_this.paused = false
-				if (
-					document.body.getBoundingClientRect().top > _this.scrollPos
-				) {
-					if (!_this.paused) {
-						console.log('up')
-						if (_this.counter - 1 > -1) _this.counter--
-						_this.paused = true
-					}
-				} else {
-					if (!_this.paused) {
-						console.log('down')
-						if (_this.counter + 1 < _this.sectionsTop.length)
-							_this.counter++
-						_this.paused = true
-					}
-				}
-				_this.scrollPos = document.body.getBoundingClientRect().top
-				// document.documentElement.scrollTop = this.sectionsTop[this.counter]
-			},
-			false
-		)
 	},
 }
 </script>

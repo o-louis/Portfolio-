@@ -1,8 +1,8 @@
 <template>
-	<section class="text-white mt-20">
+	<section class="text-white pt-20 min-h-screen">
 		<p class="opacity-60 text-lg">Hello, I'm</p>
-		<h1 class="text-4xl font-bold sm:ml-4">ORIANE LOUIS,</h1>
-		<h2 class="text-2xl font-medium opacity-60 sm:ml-12">
+		<h1 class="text-4xl font-bold ml-4">ORIANE LOUIS,</h1>
+		<h2 class="text-2xl font-medium opacity-60 ml-12">
 			Front End Developer.
 		</h2>
 
@@ -62,9 +62,5 @@ export default {
 	to {
 		transform: translateY(20px);
 	}
-}
-
-section {
-	/* height: calc(100vh - 89px); */
 }
 </style>

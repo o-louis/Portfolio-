@@ -1,11 +1,11 @@
 <template>
-	<section class="text-white">
-		<h2 class="uppercase text-xl mb-5">My Projects</h2>
+	<section class="text-white min-h-screen">
+		<h2 class="uppercase text-xl mb-6">My Projects</h2>
 		<div>
 			<div
 				v-for="(project, index) in projects"
 				:key="index"
-				class="project-img relative mb-4"
+				class="project-img relative mb-4 overflow-hidden"
 			>
 				<img :src="project.img" />
 				<div
@@ -54,7 +54,7 @@ export default {
 				{
 					img: vueflix,
 					title: 'VueFlix',
-					resume: 'Check out the popular or top rated movies',
+					resume: 'Check out the popular and top rated movies',
 					url: 'https://vueflixx.netlify.app/',
 					source: 'https://github.com/o-louis/movie-vuejs',
 				},
@@ -66,11 +66,11 @@ export default {
 
 <style scoped>
 .project-info {
-	display: none;
 	background: rgb(37, 37, 48);
+	transform: translateY(-100%);
+	transition: transform 0.4s ease-in-out;
 }
 .project-img:hover .project-info {
-	display: flex;
-	flex-direction: column;
+	transform: translateY(0);
 }
 </style>

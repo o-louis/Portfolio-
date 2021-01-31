@@ -1,5 +1,5 @@
 <template>
-	<section class="text-white">
+	<section class="text-white min-h-screen h-auto mb-4">
 		<h2 class="uppercase text-xl mb-5">More about me</h2>
 		<p class="font-light text-lg opacity-60">
 			I am skilled in
