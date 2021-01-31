@@ -1,7 +1,7 @@
 <template>
 	<section
 		id="home"
-		class="text-white pt-28 min-h-screen sm:min-h-0 h-auto sm:pt-32 text-lg sm:text-xl md:w-10/12 lg:w-8/12"
+		class="text-white pt-28 sm:min-h-0 h-auto sm:pt-32 text-lg sm:text-xl md:w-10/12 lg:w-8/12"
 	>
 		<p class="opacity-60 text-xl sm:text-2xl md:text-3xl">Hello, I'm</p>
 		<h1 class="text-3xl font-bold ml-4 my-1 sm:text-4xl md:text-5xl">
