@@ -4,7 +4,7 @@
 		<Introduction />
 		<About />
 		<Projects />
-		<footer class="text-white text-center mb-4">
+		<footer class="text-white text-center mt-20 mb-4">
 			<p>Made with ❤️ by Oriane Louis</p>
 			<p>© 2021, Built with NuxtJS</p>
 		</footer>
@@ -40,8 +40,8 @@ export default {
 </script>
 
 <style>
-/* @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700&display=swap'); */
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap'); */
 
 :root {
 	--background: #101014;
