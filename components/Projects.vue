@@ -1,5 +1,5 @@
 <template>
-	<section class="text-white min-h-screen">
+	<section id="projects" class="text-white min-h-screen pt-20">
 		<h2 class="uppercase text-xl mb-6">My Projects</h2>
 		<div>
 			<div
@@ -14,10 +14,12 @@
 					<p class="text-lg">{{ project.title }}</p>
 					<p class="italic">{{ project.resume }}</p>
 					<div class="flex justify-between mt-8">
-						<button class="border p-1 rounded w-16">
+						<button
+							class="border p-1 rounded w-16 hover:bg-white hover:text-black"
+						>
 							<a :href="project.url" target="_blank">View</a>
 						</button>
-						<button class="underline">
+						<button class="hover:underline">
 							<a :href="project.source" target="_blank">Source</a>
 						</button>
 					</div>

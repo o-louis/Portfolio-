@@ -50,6 +50,10 @@ export default {
 	font-family: 'Heebo', sans-serif;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 body {
 	background: var(--background);
 }

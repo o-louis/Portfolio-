@@ -9,7 +9,7 @@
 				:key="index"
 				class="text-white uppercase font-normal"
 			>
-				{{ section.title }}
+				<a :href="section.href">{{ section.title }}</a>
 			</li>
 		</ul>
 	</nav>
@@ -21,9 +21,9 @@ export default {
 	data() {
 		return {
 			menu: [
-				{ title: 'Home' },
-				{ title: 'About' },
-				{ title: 'Projects' },
+				{ title: 'Home', href: '#home' },
+				{ title: 'About', href: '#about' },
+				{ title: 'Projects', href: '#projects' },
 			],
 		}
 	},
