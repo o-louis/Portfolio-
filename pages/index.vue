@@ -40,14 +40,16 @@ export default {
 </script>
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
 
 :root {
 	--background: #101014;
 }
 
 * {
-	font-family: 'Heebo', sans-serif;
+	/* font-family: 'Heebo', sans-serif; */
+	font-family: 'Open Sans', sans-serif;
 }
 
 html {

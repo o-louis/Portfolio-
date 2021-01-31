@@ -1,7 +1,7 @@
 <template>
-	<section id="about" class="text-white min-h-screen h-auto pt-20">
+	<section id="about" class="text-white min-h-screen h-auto pt-28">
 		<h2 class="uppercase text-xl mb-5">More about me</h2>
-		<p class="font-light text-lg opacity-60">
+		<p class="font-light text-lg opacity-60 leading-relaxed">
 			I am skilled in
 			<span class="font-medium"
 				>JavaScript, React.js, Vue.js and Node.js</span

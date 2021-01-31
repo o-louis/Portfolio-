@@ -1,13 +1,13 @@
 <template>
 	<nav
-		class="w-10/12 h-10 flex justify-between items-center fixed top-0 py-6 z-50"
+		class="w-10/12 h-10 flex justify-between items-center fixed top-0 py-8 z-50"
 	>
 		<span class="w-3/12 mr-3" />
 		<ul class="flex flex-1 justify-between">
 			<li
 				v-for="(section, index) in menu"
 				:key="index"
-				class="text-white uppercase font-normal"
+				class="text-white uppercase font-normal text-lg"
 			>
 				<a :href="section.href">{{ section.title }}</a>
 			</li>
