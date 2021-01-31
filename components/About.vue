@@ -1,8 +1,13 @@
 <template>
-	<section id="about" class="text-white min-h-screen h-auto pt-28">
-		<h2 class="uppercase text-xl mb-5 sm:text-2xl">More about me</h2>
+	<section
+		id="about"
+		class="text-white min-h-screen sm:min-h-0 h-auto pt-28 sm:pt-32 sm:w-10/12 lg:w-8/12"
+	>
+		<h2 class="uppercase text-xl mb-5 sm:text-2xl md:text-3xl">
+			More about me
+		</h2>
 		<p
-			class="font-light text-lg opacity-60 leading-relaxed sm:text-xl sm:leading-relaxed"
+			class="font-light text-lg opacity-60 leading-relaxed sm:text-xl sm:leading-relaxed md:leading-relaxed"
 		>
 			I am skilled in
 			<span class="font-medium"
@@ -19,7 +24,7 @@
 			<li
 				v-for="(skill, index) in skills"
 				:key="index"
-				class="text-white mr-3 mt-3 py-1 px-4 sm:text-xl"
+				class="text-white mr-3 mt-3 py-1 px-4 md:text-lg"
 			>
 				{{ skill }}
 			</li>

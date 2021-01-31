@@ -1,10 +1,10 @@
 <template>
-	<div class="wrapper w-10/12 m-auto relative max-w-screen-md sm:w-8/12">
+	<div class="wrapper w-10/12 m-auto relative max-w-screen-xl">
 		<Header />
 		<Introduction />
 		<About />
 		<Projects />
-		<footer class="text-white text-center mt-20 mb-4">
+		<footer class="text-white text-center mt-20 mb-4 sm:text-lg md:text-xl">
 			<p>Made with ❤️ by Oriane Louis</p>
 			<p>© 2021, Built with NuxtJS</p>
 		</footer>

@@ -1,21 +1,28 @@
 <template>
-	<section id="projects" class="text-white min-h-screen h-auto pt-28">
-		<h2 class="uppercase text-xl mb-6 sm:text-2xl">My Projects</h2>
-		<div>
+	<section
+		id="projects"
+		class="text-white min-h-screen sm:min-h-0 h-auto pt-28 sm:pt-32 sm:w-10/12 lg:w-8/12"
+	>
+		<h2 class="uppercase text-xl mb-6 sm:text-2xl md:text-3xl">
+			My Projects
+		</h2>
+		<div class="grid sm:grid-cols-1 lg:grid-cols-2 gap-4">
 			<div
 				v-for="(project, index) in projects"
 				:key="index"
-				class="project-img relative mb-4 overflow-hidden"
+				class="project-img relative overflow-hidden max-w-xl lg:h-60"
 			>
-				<img :src="project.img" />
+				<img :src="project.img" class="object-cover h-full w-full" />
 				<div
-					class="project-info absolute top-0 w-full h-full text-sm p-4 flex flex-col sm:text-lg"
+					class="project-info absolute top-0 w-full h-full text-sm pt-14 px-20 flex flex-col sm:text-base md:px-10"
 				>
-					<p class="text-lg sm:text-xl">{{ project.title }}</p>
+					<p class="text-lg sm:text-xl">
+						{{ project.title }}
+					</p>
 					<p class="italic">{{ project.resume }}</p>
 					<div class="flex justify-between mt-8">
 						<button
-							class="border p-1 rounded w-16 hover:bg-white hover:text-black"
+							class="border p-1 rounded w-16 hover:bg-white hover:text-black sm:w-20"
 						>
 							<a :href="project.url" target="_blank">View</a>
 						</button>
@@ -68,11 +75,17 @@ export default {
 
 <style scoped>
 .project-info {
-	background: rgb(37, 37, 48);
+	background: black;
 	transform: translateY(-100%);
 	transition: transform 0.4s ease-in-out;
 }
 .project-img:hover .project-info {
 	transform: translateY(0);
+}
+
+img {
+	filter: gray;
+	-webkit-filter: grayscale(1);
+	filter: grayscale(1);
 }
 </style>
