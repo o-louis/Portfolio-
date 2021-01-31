@@ -14,7 +14,11 @@
 		</p>
 
 		<div class="flex justify-center mt-12">
-			<a v-for="(social, index) in socialNetwork" :key="index"
+			<a
+				v-for="(social, index) in socialNetwork"
+				:key="index"
+				:href="social.link"
+				target="_blank"
 				><img
 					:src="social.icon"
 					:class="[
@@ -36,10 +40,22 @@ export default {
 	data() {
 		return {
 			socialNetwork: [
-				{ icon: require('../assets/linkedin.svg') },
-				{ icon: require('../assets/github.svg') },
-				{ icon: require('../assets/codepen.svg') },
-				{ icon: require('../assets/mail.svg') },
+				{
+					icon: require('../assets/linkedin.svg'),
+					link: 'https://www.linkedin.com/in/oriane-louis/',
+				},
+				{
+					icon: require('../assets/github.svg'),
+					link: 'https://github.com/o-louis',
+				},
+				{
+					icon: require('../assets/codepen.svg'),
+					link: 'https://codepen.io/reavenclaw',
+				},
+				{
+					icon: require('../assets/mail.svg'),
+					link: 'mailto:oriane.louis.pro@gmail.com',
+				},
 			],
 			chevronDown: require('../assets/chevron-down.svg'),
 		}
