@@ -72,7 +72,7 @@ export default {
 		}
 	},
 	mounted() {
-		setInterval(() => {
+		let timer = setInterval(() => {
 			document.querySelector('.l1').classList.add('fade')
 			stopTimer()
 		}, 80)
