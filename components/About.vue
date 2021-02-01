@@ -61,7 +61,6 @@ export default {
 	mounted() {
 		setInterval(() => {
 			document.querySelector('.l6').classList.add('rightToLeft')
-			stopTimer()
 		}, 80)
 	},
 }
@@ -78,7 +77,7 @@ li {
 }
 
 .l6.rightToLeft {
-	opacity: 0.6;
+	opacity: 1;
 	transition-delay: 1.5s;
 }
 </style>

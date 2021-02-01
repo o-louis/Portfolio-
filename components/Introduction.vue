@@ -39,7 +39,7 @@
 			/></a>
 		</div>
 
-		<div class="chevron w-full mt-10">
+		<div class="chevron w-full mt-10 l5 opacity-0">
 			<img :src="chevronDown" class="m-auto" />
 		</div>
 	</section>
@@ -81,7 +81,8 @@ export default {
 			document.querySelector('.l2').classList.add('rightToLeft')
 			document.querySelector('.l3').classList.add('rightToLeft')
 			document.querySelector('.l4').classList.add('rightToLeft')
-			document.querySelector('.l5').classList.add('rightToLeft')
+			document.querySelectorAll('.l5')[0].classList.add('rightToLeft')
+			document.querySelectorAll('.l5')[1].classList.add('rightToLeft')
 			clearInterval(timer)
 			timer = null
 		}
