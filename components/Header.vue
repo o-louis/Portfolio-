@@ -9,7 +9,12 @@
 				:key="index"
 				class="text-white uppercase font-normal text-lg sm:text-xl sm:mt-2 md:text-2xl"
 			>
-				<a :href="section.href">{{ section.title }}</a>
+				<a
+					:href="section.href"
+					:target="section.target ? '_blank' : ''"
+					:class="{ resume: section.target }"
+					>{{ section.title }}</a
+				>
 			</li>
 		</ul>
 	</nav>
@@ -24,6 +29,7 @@ export default {
 				{ title: 'Home', href: '#home' },
 				{ title: 'About', href: '#about' },
 				{ title: 'Projects', href: '#projects' },
+				{ title: 'Resume', href: './CV-Oriane.pdf', target: true },
 			],
 		}
 	},
@@ -38,6 +44,12 @@ nav {
 span {
 	height: 1px;
 	background: rgba(255, 255, 255, 0.15);
+}
+
+@media screen and (max-width: 640px) {
+	.resume {
+		display: none;
+	}
 }
 
 @media screen and (min-width: 640px) {
