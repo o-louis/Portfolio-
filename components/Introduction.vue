@@ -3,24 +3,28 @@
 		id="home"
 		class="text-white pt-28 sm:min-h-0 h-auto sm:pt-32 text-lg sm:text-xl md:w-10/12 lg:w-8/12"
 	>
-		<p class="opacity-60 text-xl sm:text-2xl md:text-3xl">Hello, I'm</p>
-		<h1 class="text-3xl font-bold ml-4 my-1 sm:text-4xl md:text-5xl">
-			ORIANE LOUIS,
-		</h1>
+		<p class="opacity-0 text-xl sm:text-2xl md:text-3xl l1">Hello, I'm</p>
+		<transition name="fade">
+			<h1
+				class="text-3xl font-bold ml-4 my-1 opacity-0 sm:text-4xl md:text-5xl transform translate-x-8 l2"
+			>
+				ORIANE LOUIS,
+			</h1>
+		</transition>
 		<h2
-			class="text-2xl font-semibold opacity-60 ml-12 sm:text-3xl md:text-4xl"
+			class="text-2xl font-semibold opacity-0 ml-12 transform translate-x-10 l3 sm:text-3xl md:text-4xl"
 		>
 			Front End Developer.
 		</h2>
 
-		<p class="mt-12 font-light opacity-60 leading-relaxed">
+		<p class="mt-12 font-light leading-relaxed l4 opacity-0">
 			I’m a <span class="font-medium">passionate developer</span> based in
 			Montreal. I’m enthusiast about new technologies and I
 			<span class="font-medium">love building things</span> and
 			<span class="font-medium">improve user experience</span>.
 		</p>
 
-		<div class="flex justify-center mt-12">
+		<div class="flex justify-center mt-12 l5 opacity-0">
 			<a
 				v-for="(social, index) in socialNetwork"
 				:key="index"
@@ -67,6 +71,21 @@ export default {
 			chevronDown: require('../assets/chevron-down.svg'),
 		}
 	},
+	mounted() {
+		setInterval(() => {
+			document.querySelector('.l1').classList.add('fade')
+			stopTimer()
+		}, 80)
+
+		const stopTimer = () => {
+			document.querySelector('.l2').classList.add('rightToLeft')
+			document.querySelector('.l3').classList.add('rightToLeft')
+			document.querySelector('.l4').classList.add('rightToLeft')
+			document.querySelector('.l5').classList.add('rightToLeft')
+			clearInterval(timer)
+			timer = null
+		}
+	},
 }
 </script>
 
@@ -76,6 +95,43 @@ export default {
 	animation-name: bounce;
 	animation-iteration-count: infinite;
 	animation-direction: alternate;
+}
+
+.l1 {
+	transition: opacity 0.25s ease;
+}
+
+.l2,
+.l3,
+.l4,
+.l5 {
+	transition: all 0.25s ease;
+}
+
+.l1.fade {
+	transition-delay: 0.25s;
+	opacity: 0.6;
+}
+
+.l2.rightToLeft {
+	opacity: 1;
+	transition-delay: 0.5s;
+	transform: translateX(0px);
+}
+
+.l3.rightToLeft {
+	opacity: 0.6;
+	transition-delay: 0.75s;
+	transform: translateX(0px);
+}
+
+.l4.rightToLeft {
+	opacity: 0.6;
+	transition-delay: 1s;
+}
+.l5.rightToLeft {
+	opacity: 1;
+	transition-delay: 1.25s;
 }
 
 @keyframes bounce {

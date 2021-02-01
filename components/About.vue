@@ -1,7 +1,8 @@
 <template>
 	<section
 		id="about"
-		class="text-white sm:min-h-0 h-auto pt-28 sm:pt-32 sm:w-10/12 lg:w-8/12"
+		class="text-white sm:min-h-0 h-auto pt-28 sm:pt-32 sm:w-10/12 lg:w-8/12 l6 opacity-0"
+		v-scroll-reveal.reset
 	>
 		<h2 class="uppercase text-xl mb-5 sm:text-2xl md:text-3xl">
 			More about me
@@ -57,6 +58,12 @@ export default {
 			],
 		}
 	},
+	mounted() {
+		setInterval(() => {
+			document.querySelector('.l6').classList.add('rightToLeft')
+			stopTimer()
+		}, 80)
+	},
 }
 </script>
 
@@ -64,5 +71,14 @@ export default {
 li {
 	background: rgb(37, 37, 48);
 	border-radius: 8px;
+}
+
+.l6 {
+	transition: all 0.25s ease;
+}
+
+.l6.rightToLeft {
+	opacity: 0.6;
+	transition-delay: 1.5s;
 }
 </style>
