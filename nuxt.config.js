@@ -1,10 +1,11 @@
 export default {
 	// Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
+	target: 'static',
 	ssr: false,
 
 	// Global page headers: https://go.nuxtjs.dev/config-head
 	head: {
-		title: 'portfolio-v3',
+		title: 'Oriane | Front End Developer',
 		htmlAttrs: {
 			lang: 'en',
 		},
