@@ -15,7 +15,7 @@
 			>
 				<img :src="project.img" class="object-cover h-full w-full" />
 				<div
-					class="project-info absolute top-0 w-full h-full text-sm pt-14 px-20 flex flex-col sm:text-base md:px-10"
+					class="project-info absolute top-0 w-full h-full text-sm px-6 flex flex-col justify-center flex flex-col sm:text-base md:px-10"
 				>
 					<p class="text-lg sm:text-xl">
 						{{ project.title }}

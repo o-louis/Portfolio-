@@ -48,8 +48,8 @@ export default {
 }
 
 * {
-	/* font-family: 'Heebo', sans-serif; */
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Heebo', sans-serif;
+	/* font-family: 'Open Sans', sans-serif; */
 }
 
 html {
