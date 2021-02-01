@@ -4,18 +4,16 @@
 		<Introduction />
 		<About />
 		<Projects />
-		<footer class="text-white text-center mt-32 mb-4 sm:text-lg md:text-xl">
-			<p>Made with ❤️ by Oriane Louis</p>
-			<p>© 2021, Built with NuxtJS</p>
-		</footer>
+		<Footer />
 	</div>
 </template>
 
 <script>
-import Header from '@/components/Header.vue'
-import Introduction from '@/components/Introduction.vue'
-import About from '@/components/About.vue'
-import Projects from '@/components/Projects.vue'
+import Header from '@/layouts/Header.vue'
+import Introduction from '@/layouts/Introduction.vue'
+import About from '@/layouts/About.vue'
+import Projects from '@/layouts/Projects.vue'
+import Footer from '@/layouts/Footer.vue'
 
 export default {
 	name: 'Home',
@@ -24,32 +22,16 @@ export default {
 		Introduction,
 		About,
 		Projects,
-	},
-	data() {
-		return {
-			sectionsTop: [],
-			lastScrollPosition: 0,
-			counter: 0,
-			currentCounter: 1,
-			currentSection: 0,
-			scrollPos: 0,
-			paused: false,
-		}
+		Footer,
 	},
 }
 </script>
 
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700&display=swap');
-/* @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap'); */
-
-:root {
-	--background: #101014;
-}
 
 * {
 	font-family: 'Heebo', sans-serif;
-	/* font-family: 'Open Sans', sans-serif; */
 }
 
 html {
@@ -57,10 +39,6 @@ html {
 }
 
 body {
-	background: var(--background);
-}
-
-section {
-	height: 88vh;
+	background: #101014;
 }
 </style>
