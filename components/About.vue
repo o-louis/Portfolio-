@@ -4,11 +4,11 @@
 		class="text-white sm:min-h-0 h-auto pt-28 sm:pt-32 sm:w-10/12 lg:w-8/12 l6 opacity-0"
 		v-scroll-reveal.reset
 	>
-		<h2 class="uppercase text-xl mb-5 sm:text-2xl md:text-3xl">
+		<h2 class="uppercase text-xl mb-5 sm:text-2xl md:text-3xl lg:text-4xl">
 			More about me
 		</h2>
 		<p
-			class="font-light text-lg opacity-60 leading-relaxed sm:text-xl sm:leading-relaxed md:leading-relaxed"
+			class="font-light text-lg opacity-60 leading-relaxed sm:text-xl lg:text-2xl sm:leading-relaxed md:leading-relaxed lg:leading-relaxed"
 		>
 			I am skilled in
 			<span class="font-medium"
@@ -25,7 +25,7 @@
 			<li
 				v-for="(skill, index) in skills"
 				:key="index"
-				class="text-white mr-3 mt-3 py-1 px-4 md:text-lg"
+				class="text-white mr-3 mt-3 py-1 px-4 md:text-lg lg:text-xl"
 			>
 				{{ skill }}
 			</li>

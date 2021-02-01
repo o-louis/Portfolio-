@@ -1,10 +1,10 @@
 <template>
 	<section
 		id="projects"
-		class="text-white sm:min-h-0 h-auto pt-28 sm:pt-32 sm:w-10/12 "
+		class="text-white sm:min-h-0 h-auto pt-28 sm:pt-32 sm:w-10/12"
 		v-scroll-reveal.reset
 	>
-		<h2 class="uppercase text-xl mb-6 sm:text-2xl md:text-3xl">
+		<h2 class="uppercase text-xl mb-6 sm:text-2xl md:text-3xl lg:text-4xl">
 			My Projects
 		</h2>
 		<div class="grid sm:grid-cols-1 lg:grid-cols-3 gap-4">

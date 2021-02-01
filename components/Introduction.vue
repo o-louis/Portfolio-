@@ -1,18 +1,20 @@
 <template>
 	<section
 		id="home"
-		class="text-white pt-28 sm:min-h-0 h-auto sm:pt-32 text-lg sm:text-xl md:w-10/12 lg:w-8/12"
+		class="text-white pt-28 sm:min-h-0 h-auto sm:pt-32 text-lg sm:text-xl lg:text-2xl md:w-10/12 lg:w-8/12"
 	>
-		<p class="opacity-0 text-xl sm:text-2xl md:text-3xl l1">Hello, I'm</p>
+		<p class="opacity-0 text-xl sm:text-2xl md:text-3xl lg:text-4xl l1">
+			Hello, I'm
+		</p>
 		<transition name="fade">
 			<h1
-				class="text-3xl font-bold ml-4 my-1 opacity-0 sm:text-4xl md:text-5xl transform translate-x-8 l2"
+				class="text-3xl font-bold ml-4 my-1 opacity-0 sm:text-4xl md:text-5xl lg:text-6xl transform translate-x-8 l2"
 			>
 				ORIANE LOUIS,
 			</h1>
 		</transition>
 		<h2
-			class="text-2xl font-semibold opacity-0 ml-12 transform translate-x-10 l3 sm:text-3xl md:text-4xl"
+			class="text-2xl font-semibold opacity-0 ml-12 transform translate-x-10 l3 sm:text-3xl md:text-4xl lg:text-5xl"
 		>
 			Front End Developer.
 		</h2>
@@ -34,7 +36,7 @@
 					:src="social.icon"
 					:class="[
 						socialNetwork.length - 1 != index ? 'pr-3' : '',
-						'h-10 sm:h-10',
+						'h-10 sm:h-10 lg:h-12',
 					]"
 			/></a>
 		</div>
