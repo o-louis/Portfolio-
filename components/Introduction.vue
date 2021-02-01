@@ -80,9 +80,9 @@ export default {
 		const stopTimer = () => {
 			document.querySelector('.l2').classList.add('rightToLeft')
 			document.querySelector('.l3').classList.add('rightToLeft')
-			document.querySelector('.l4').classList.add('rightToLeft')
-			document.querySelectorAll('.l5')[0].classList.add('rightToLeft')
-			document.querySelectorAll('.l5')[1].classList.add('rightToLeft')
+			document.querySelector('.l4').classList.add('fade')
+			document.querySelectorAll('.l5')[0].classList.add('fade')
+			document.querySelectorAll('.l5')[1].classList.add('fade')
 			clearInterval(timer)
 			timer = null
 		}
@@ -98,15 +98,12 @@ export default {
 	animation-direction: alternate;
 }
 
-.l1 {
-	transition: opacity 0.25s ease;
-}
-
+.l1,
 .l2,
 .l3,
 .l4,
 .l5 {
-	transition: all 0.25s ease;
+	transition: all 0.5s ease;
 }
 
 .l1.fade {
@@ -122,17 +119,17 @@ export default {
 
 .l3.rightToLeft {
 	opacity: 0.6;
-	transition-delay: 0.75s;
+	transition-delay: 1s;
 	transform: translateX(0px);
 }
 
-.l4.rightToLeft {
+.l4.fade {
 	opacity: 0.6;
-	transition-delay: 1s;
+	transition-delay: 1.5s;
 }
-.l5.rightToLeft {
+.l5.fade {
 	opacity: 1;
-	transition-delay: 1.25s;
+	transition-delay: 1.75s;
 }
 
 @keyframes bounce {

@@ -60,7 +60,7 @@ export default {
 	},
 	mounted() {
 		setInterval(() => {
-			document.querySelector('.l6').classList.add('rightToLeft')
+			document.querySelector('.l6').classList.add('fade')
 		}, 80)
 	},
 }
@@ -73,11 +73,11 @@ li {
 }
 
 .l6 {
-	transition: all 0.25s ease;
+	transition: all 0.5s ease;
 }
 
-.l6.rightToLeft {
+.l6.fade {
 	opacity: 1;
-	transition-delay: 1.5s;
+	transition-delay: 2s;
 }
 </style>
