@@ -7,11 +7,11 @@
 		<h2 class="uppercase text-xl mb-6 sm:text-2xl md:text-3xl lg:text-4xl">
 			My Projects
 		</h2>
-		<div class="grid sm:grid-cols-1 lg:grid-cols-3 gap-4">
+		<div class="grid sm:grid-cols-1 lg:grid-cols-3 gap-5">
 			<div
 				v-for="(project, index) in projects"
 				:key="index"
-				class="project-img relative overflow-hidden max-w-xl lg:h-60"
+				class="project-img relative overflow-hidden max-w-xl sm:w-96 sm:h-52 md:w-10/12 md:max-w-md lg:h-52 lg:max-w-xl lg:w-full"
 			>
 				<img :src="project.img" class="object-cover h-full w-full" />
 				<div
