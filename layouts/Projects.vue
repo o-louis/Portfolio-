@@ -41,6 +41,9 @@
 import codetips from '@/assets/codetips.png'
 import covidtracker from '@/assets/covidtracker.png'
 import vueflix from '@/assets/vueflix.png'
+import urlShortener from '@/assets/url-shortener.png'
+import spotifyClone from '@/assets/spotify-clone.png'
+import reachatt from '@/assets/reachatt.png'
 
 export default {
 	name: 'Projects',
@@ -68,6 +71,27 @@ export default {
 					url: 'https://vueflixx.netlify.app/',
 					source: 'https://github.com/o-louis/movie-vuejs',
 				},
+				{
+					img: urlShortener,
+					title: 'Url Shortener',
+					resume: 'Short urls only in local',
+					url: 'https://srrt.netlify.app/',
+					source: 'https://github.com/o-louis/url-shortener',
+				},
+				{
+					img: spotifyClone,
+					title: 'Spotify Clone Integration',
+					resume: 'Not efficient just visual',
+					url: 'https://spotify-clone01.netlify.app/',
+					source: 'https://github.com/o-louis/spotify-clone',
+				},
+				{
+					img: reachatt,
+					title: 'Live chat',
+					resume: 'Made with react, you can create or join a room',
+					url: 'https://reachatt.netlify.app/',
+					source: 'https://github.com/o-louis/react-chat-app',
+				}
 			],
 		}
 	},
@@ -84,9 +108,9 @@ export default {
 	transform: translateY(0);
 }
 
-img {
+/* img {
 	filter: gray;
 	-webkit-filter: grayscale(1);
 	filter: grayscale(1);
-}
+} */
 </style>
