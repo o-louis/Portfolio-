@@ -1,7 +1,7 @@
 <template>
 	<section
 		id="home"
-		class="text-white pt-28 sm:min-h-0 h-auto sm:pt-32 text-lg sm:text-xl lg:text-2xl md:w-10/12 lg:w-8/12"
+		class="text-white pt-28 sm:min-h-0 h-auto sm:pt-32 text-lg sm:text-xl lg:text-2xl sm:w-10/12 lg:w-8/12"
 	>
 		<p class="opacity-0 text-xl sm:text-2xl md:text-3xl lg:text-4xl anim_1" ref="anim_1">
 			Hello, I'm
