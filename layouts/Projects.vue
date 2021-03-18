@@ -69,7 +69,7 @@ export default {
 					title: 'VueFlix',
 					resume: 'Check out the popular and top rated movies',
 					url: 'https://vueflixx.netlify.app/',
-					source: 'https://github.com/o-louis/movie-vuejs',
+					source: 'https://github.com/o-louis/Vueflixx',
 				},
 				{
 					img: urlShortener,
