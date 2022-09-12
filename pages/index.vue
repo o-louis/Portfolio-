@@ -1,10 +1,10 @@
 <template>
-	<div class="wrapper w-10/12 m-auto relative max-w-screen-xl">
-		<Header />
+	<div class="wrapper w-10/12 m-auto relative max-w-screen-xl flex justify-center">
+		<!-- <Header /> -->
 		<Introduction />
-		<About />
+		<!-- <About />
 		<Projects />
-		<Footer />
+		<Footer /> -->
 	</div>
 </template>
 
@@ -36,9 +36,13 @@ export default {
 
 html {
 	scroll-behavior: smooth;
+	height: 100vh;
 }
 
 body {
 	background: #101014;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 </style>

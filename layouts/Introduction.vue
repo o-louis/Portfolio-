@@ -1,31 +1,32 @@
 <template>
 	<section
 		id="home"
-		class="text-white pt-28 sm:min-h-0 h-auto sm:pt-32 text-lg sm:text-xl lg:text-2xl sm:w-10/12 lg:w-8/12"
+		class="text-white sm:min-h-0 h-auto text-lg sm:text-xl lg:text-2xl sm:w-10/12 lg:w-8/12"
 	>
 		<p class="opacity-0 text-xl sm:text-2xl md:text-3xl lg:text-4xl anim_1" ref="anim_1">
 			Hello, I'm
 		</p>
 		<transition name="fade">
 			<h1
-				class="text-3xl font-bold ml-4 my-1 opacity-0 sm:text-4xl md:text-5xl lg:text-6xl transform translate-x-8 anim_2"
+				class="text-3xl font-bold my-1 opacity-0 sm:text-4xl md:text-5xl lg:text-6xl transform translate-x-8 anim_2"
 				ref="anim_2"
 			>
 				ORIANE LOUIS,
 			</h1>
 		</transition>
 		<h2
-			class="text-2xl font-semibold opacity-0 ml-12 transform translate-x-10 sm:text-3xl md:text-4xl lg:text-5xl anim_3"
+			class="text-2xl font-semibold opacity-0 transform translate-x-10 sm:text-3xl md:text-4xl lg:text-5xl anim_3"
 			ref="anim_3"
 		>
 			Front End Developer.
 		</h2>
 
 		<p class="mt-12 font-light leading-relaxed opacity-0 anim_4" ref="anim_4">
-			I’m a <span class="font-medium">passionate developer</span> based in
-			Montreal. I’m enthusiast about new technologies and I
-			<span class="font-medium">love building things</span> and
-			<span class="font-medium">improve user experience</span>.
+			<span class="font-medium">Passionate developer</span> based in
+			Montreal. I’m enthusiast about new technologies. I enjoy
+			<span class="font-medium">building things</span> and
+			<span class="font-medium">improving User Experience</span>
+			with modern technologies like <span class="font-medium">Vue💚, TypeScript, React, Next.js/Nuxt, TailwindCSS, Fastify, Three.js</span>.
 		</p>
 
 		<div class="flex justify-center mt-12 opacity-0 anim_5" ref="anim_5">
@@ -43,9 +44,9 @@
 			/></a>
 		</div>
 
-		<div class="chevron w-full mt-10 opacity-0 anim_6" ref="anim_6">
+		<!-- <div class="chevron w-full mt-10 opacity-0 anim_6" ref="anim_6">
 			<img :src="chevronDown" class="m-auto" />
-		</div>
+		</div> -->
 	</section>
 </template>
 
@@ -55,10 +56,10 @@ export default {
 	data() {
 		return {
 			socialNetwork: [
-				{
-					icon: require('../assets/linkedin.svg'),
-					link: 'https://www.linkedin.com/in/oriane-louis/',
-				},
+				// {
+				// 	icon: require('../assets/linkedin.svg'),
+				// 	link: 'https://www.linkedin.com/in/oriane-louis/',
+				// },
 				{
 					icon: require('../assets/github.svg'),
 					link: 'https://github.com/o-louis',
@@ -86,7 +87,7 @@ export default {
 			this.$refs.anim_3.classList.add('rightToLeft')
 			this.$refs.anim_4.classList.add('fade')
 			this.$refs.anim_5.classList.add('fade')	
-			this.$refs.anim_6.classList.add('fade')
+			// this.$refs.anim_6.classList.add('fade')
 			clearInterval(timer)
 			timer = null
 		}
@@ -106,8 +107,8 @@ export default {
 .anim_2,
 .anim_3,
 .anim_4,
-.anim_5,
-.anim_6 {
+.anim_5 
+/* .anim_6 { */ {
 	transition: all 0.5s ease;
 }
 

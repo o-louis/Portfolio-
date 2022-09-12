@@ -29,7 +29,7 @@ export default {
 				{ title: 'Home', href: '#home' },
 				{ title: 'About', href: '#about' },
 				{ title: 'Projects', href: '#projects' },
-				{ title: 'Resume', href: './Resume-Oriane.pdf', target: true },
+				// { title: 'Resume', href: './Resume-Oriane.pdf', target: true },
 			],
 		}
 	},
